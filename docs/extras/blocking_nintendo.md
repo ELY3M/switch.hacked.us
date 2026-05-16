@@ -12,7 +12,7 @@ You can configure Atmosphère to automatically redirect any requests directed to
 
 ### Section I - Requirements
 
-* The [emummc.txt](/files/emummc.txt){download} file
+* The [emummc.txt](https://nintendohomebrew.com/assets/emummc.txt){download} file
 * Atmosphère 0.18.0 or higher
 
 ### Section II - Installation

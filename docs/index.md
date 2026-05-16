@@ -76,7 +76,7 @@ More information about the fusee-gelee vulnerability can be found in its vulnera
 * Running game modifications on games that you own.
 * Backup, edit, and restore saves for many games.
 * Play games for older systems with various emulators, using RetroArch or other standalone emulators.
-* Safely update to the latest system version without fear of losing access to homebrew.
+* Safely update to the latest system version without fear of permanently losing access to CFW.
 * Safely customize your device while retaining full access to Nintendo Switch Online services.
 
 More things to do with a CFW-installed Switch can be found later on in the guide.
