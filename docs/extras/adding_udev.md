@@ -58,7 +58,7 @@ Next, we will add a new `udev` rule. `udev` is a device manager for the linux ke
 1. Enter the following command:
 
     ```shell
-    echo 'SUBSYSTEMS=="usb", ATTRS{manufacturer}=="NVIDIA Corp.", ATTRS{product}=="APX", GROUP="nintendo_switch"' > /etc/udev/rules.d/10-switch.rules
+    echo 'SUBSYSTEMS=="usb", ATTRS{manufacturer}=="NVIDIA Corp.", ATTRS{product}=="APX", GROUP="nintendo_switch"' > /etc/udev/rules.d/70-switch.rules
     ```
 
 1. Enter the following command:
