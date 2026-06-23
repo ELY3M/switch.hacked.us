@@ -40,8 +40,8 @@ Selecting hosts file...
 Skipping /hosts/emummc_<emummc_id>.txt because it does not exist...
 Selected /hosts/emummc.txt
 Redirections:
-    `*ctest.cdn.nintendo.net` -> 95.216.149.205
-    `*conntest.nintendowifi.net` -> 95.216.149.205
+    `*ctest.cdn.nintendo.net` -> 157.230.80.146
+    `*conntest.nintendowifi.net` -> 157.230.80.146
     `*nintendoswitch.cn` -> 127.0.0.1
     `*nintendoswitch.com.cn` -> 127.0.0.1
     `*nintendoswitch.com` -> 127.0.0.1
