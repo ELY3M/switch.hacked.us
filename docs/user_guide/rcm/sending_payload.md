@@ -29,13 +29,14 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 
 1. Download and open OmniRCM.
     * If you get a SmartScreen popup, click `More info` and click `Run anyway`.
-1. Connect your Switch in while it's in RCM to your PC using the USB cable.
+1. Connect your Switch while it's in RCM to your PC using the USB cable.
 1. Click the red `Install Driver` button near the top of the window.
     * If you face issues when installing the driver, follow the driver installation with [Zadig](#optional---driver-installation-with-zadig) section below.
 1. Under `Payloads`, click the `↓ Update` button to fetch the remote payloads.
 1. Select the `hekate` payload.
 1. Click the Green `► Inject Payload` button
-    * If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.
+    * If your payload was successfully injected your switch should have yellow text about missing libs and `Update bootloader folder!` these warnings will be resolved soon.
+    * If you do not have a microSD in the system this text will instead say `Failed to init or mount SD!`. This warning can be ignored for now as well.
 
 If you experience issues with driver installation or you just want to try a different payload injector, you can check out TegraRcmGUI and Zadig sections by unfolding them below.
 
@@ -45,7 +46,7 @@ If you experience issues with driver installation or you just want to try a diff
 
 * The latest release of [TegraRCMGUI](https://github.com/eliboa/TegraRcmGUI/releases)
 * A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)
-* The latest release of [hekate](https://github.com/CTCaer/hekate/releases/). The hekate payload (`hekate_ctcaer_(version).bin`) is located inside of the `hekate_ctcaer_(version).zip`.
+* The latest release of [hekate](https://github.com/CTCaer/hekate/releases/). The hekate payload (`hekate_ctcaer_(version)_nyx_(version).bin`) is located inside of the `hekate_ctcaer_(version).zip`.
 
 ### Section II - Instructions
 
@@ -57,8 +58,9 @@ If you experience issues with driver installation or you just want to try a diff
 1. Press the file button next to `Inject payload`, and navigate to and select the `hekate_ctcaer_X.X.X.bin` file.
     * Do not use the hekate payload included in TegraRcmGUI. It is outdated and missing a feature needed later in the guide.
 1. Click `Inject payload` to launch the payload you selected.
-    * If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.
-
+    * If your payload was successfully injected your switch should have yellow text about missing libs and `Update bootloader folder!` these warnings will be resolved soon.
+    * If you do not have a microSD in the system this text will instead say `Failed to init or mount SD!`. This warning can be ignored for now as well.
+    
 :::
 
 ::: details Optional - Driver installation with Zadig (click to unfold) {closed}
@@ -95,7 +97,7 @@ Follow these steps if you face issues when installing the driver with OmniRCM. Y
     1. You should now be able to double click the app to open it from your file manager.
     - **Note:** most file managers *do* allow you to make a file executable by right clicking the file and going to Properties > Permissions (or similar) > Allow executing file as program. The process is roughly the same for all Linux distributions.
     :::
-1. Connect your Switch in while it's in RCM to your PC using the USB cable.
+1. Connect your Switch while it's in RCM to your PC using the USB cable.
 1. Click the red `Setup udev` button near the top of the OmniRCM window.
 1. Fill in your root password in the dialogue box that appears.
 1. Click `Install`
@@ -105,8 +107,8 @@ Follow these steps if you face issues when installing the driver with OmniRCM. Y
 1. Under `Payloads`, click the `↓ Update` button to fetch the remote payloads.
 1. Select the `hekate` payload.
 1. Click the Green `► Inject Payload` button
-    * If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.
-
+    * If your payload was successfully injected your switch should have yellow text about missing libs and `Update bootloader folder!` these warnings will be resolved soon.
+    * If you do not have a microSD in the system this text will instead say `Failed to init or mount SD!`. This warning can be ignored for now as well.
 
 ---
 
@@ -128,8 +130,9 @@ If you experience issues with OmniRCM or you just want to try a different payloa
 1. Click on `Connect device...` and select `APX`.
 1. Click the hekate entry in the payload list.
 1. Click the Blue `Inject` button.
-    * If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.
-
+    * If your payload was successfully injected your switch should have yellow text about missing libs and `Update bootloader folder!` these warnings will be resolved soon.
+    * If you do not have a microSD in the system this text will instead say `Failed to init or mount SD!`. This warning can be ignored for now as well.
+    
 ::::
 
 :::: tab macOS
@@ -144,12 +147,13 @@ If you experience issues with OmniRCM or you just want to try a different payloa
 1. Download the latest release of OmniRCM.
 1. Extract the `OmniRCM-osx.zip` archive somewhere (if needed, usually automatic).
 1. Use Finder to open `OmniRCM.app`.
-1. Connect your Switch in while it's in RCM to your PC using the USB cable.
+1. Connect your Switch while it's in RCM to your PC using the USB cable.
 1. Under `Payloads`, click the `↓ Update` button to fetch the remote payloads.
 1. Select the `hekate` payload.
 1. Click the Green `► Inject Payload` button
-    * If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.
-
+    * If your payload was successfully injected your switch should have yellow text about missing libs and `Update bootloader folder!` these warnings will be resolved soon.
+    * If you do not have a microSD in the system this text will instead say `Failed to init or mount SD!`. This warning can be ignored for now as well.
+    
 ---
 
 If you experience issues with OmniRCM or you just want to try a different payload injector, you can check out the web injector by unfolding the section below.
@@ -168,8 +172,9 @@ If you experience issues with OmniRCM or you just want to try a different payloa
 1. Click on `Connect device...` and select `APX`.
 1. Click the hekate entry in the payload list.
 1. Click the Blue `Inject` button.
-    * If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.
-
+    * If your payload was successfully injected your switch should have yellow text about missing libs and `Update bootloader folder!` these warnings will be resolved soon.
+    * If you do not have a microSD in the system this text will instead say `Failed to init or mount SD!`. This warning can be ignored for now as well.
+    
 :::
 
 ::::
@@ -187,13 +192,14 @@ If you experience issues with OmniRCM or you just want to try a different payloa
 
 1. Install the `OmniRCM-android.apk` file.
 1. Open the app from your Home menu.
-1. Connect your Switch in while it's in RCM to your Android device using the USB cable.
+1. Connect your Switch while it's in RCM to your Android device using the USB cable.
 1. Allow OmniRCM to access the APX device. (either temporarily or permanently)
 1. Tap on the `Fetch Payloads` button to fetch the remote payloads.
 1. Select the `hekate` payload.
 1. Tap on the `Inject` button.
-    * If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.
-
+    * If your payload was successfully injected your switch should have yellow text about missing libs and `Update bootloader folder!` these warnings will be resolved soon.
+    * If you do not have a microSD in the system this text will instead say `Failed to init or mount SD!`. This warning can be ignored for now as well.
+    
 ---
 
 If you experience issues with OmniRCM or you just want to try a different payload injector, you can check out the web injector by unfolding the section below.
@@ -212,8 +218,9 @@ If you experience issues with OmniRCM or you just want to try a different payloa
 1. Click on `Connect device...` and select `APX`.
 1. Click the hekate entry in the payload list.
 1. Click the Blue `Inject` button.
-    * If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.
-
+    * If your payload was successfully injected your switch should have yellow text about missing libs and `Update bootloader folder!` these warnings will be resolved soon.
+    * If you do not have a microSD in the system this text will instead say `Failed to init or mount SD!`. This warning can be ignored for now as well.
+    
 :::
 
 ::::
@@ -236,12 +243,13 @@ If you experience issues with OmniRCM or you just want to try a different payloa
 1. Navigate to `OmniRCM` > `Utilities` > `OmniRCM` and tap `GET`.
 1. Install the app from the queue. In `Sileo`, this is in the bottom right of your screen.
 1. Open the app.
-1. Connect your Switch in while it's in RCM to your Phone using the USB cable.s
+1. Connect your Switch while it's in RCM to your Phone using the USB cable.s
 1. Tap on the `Fetch Payloads` button to fetch the remote payloads.
 1. Select the `hekate` payload.
 1. Tap on the `Inject` button.
-    * If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.
-
+    * If your payload was successfully injected your switch should have yellow text about missing libs and `Update bootloader folder!` these warnings will be resolved soon.
+    * If you do not have a microSD in the system this text will instead say `Failed to init or mount SD!`. This warning can be ignored for now as well.
+    
 ::::
 
 :::: tab ChromeOS
@@ -265,8 +273,9 @@ If your Chromebook has a USB-C port, do note that this will not work using a C-C
 1. Click on `Connect device...` and select `APX`.
 1. Click the hekate entry in the payload list.
 1. Click the Blue `Inject` button.
-    * If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.
-
+    * If your payload was successfully injected your switch should have yellow text about missing libs and `Update bootloader folder!` these warnings will be resolved soon.
+    * If you do not have a microSD in the system this text will instead say `Failed to init or mount SD!`. This warning can be ignored for now as well.
+    
 ::::
 
 :::::
@@ -293,7 +302,7 @@ Later in the guide, you will be formatting and/or partitioning your microSD card
 
 ### Section I - Requirements
 
-* The latest release of [hekate](https://github.com/CTCaer/hekate/releases/).
+* The latest release of [hekate](https://github.com/CTCaer/hekate/releases/) (`hekate_ctcaer_(version)_nyx_(version).zip`).
 * Your microSD card
 
 ### Section II - Instructions
@@ -306,6 +315,7 @@ Later in the guide, you will be formatting and/or partitioning your microSD card
 1. Copy the `bootloader` folder to the root of your microSD card.
 1. Put your microSD card back into your Switch.
 1. Press either volume button or power to continue to the hekate menu.
+    * It will say `Warning: Nyx is missing!` near the bottom of the screen, this will be resolved with the next step.
 1. Use volume up and volume down to navigate the hekate menu. Hover over 'load nyx' and press the power button to select. Your screen should now have the hekate GUI (Nyx) pictured below.
 
     ![Nyx](../all/img/nyx.bmp){ width="600" }
